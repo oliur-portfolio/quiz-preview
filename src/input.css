@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Switzer";
+    font-weight: 400;
+    src: url("../fonts/Switzer-Regular.ttf") format("truetype"),
+      url("../fonts/Switzer-Regular.woff") format("woff"),
+      url("../fonts/Switzer-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Switzer";
+    font-weight: 500;
+    src: url("../fonts/Switzer-Medium.ttf") format("truetype"),
+      url("../fonts/Switzer-Medium.woff") format("woff"),
+      url("../fonts/Switzer-Medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Switzer";
+    font-weight: 600;
+    src: url("../fonts/Switzer-Semibold.ttf") format("truetype"),
+      url("../fonts/Switzer-Semibold.woff") format("woff"),
+      url("../fonts/Switzer-Semibold.woff2") format("woff2");
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-switzer text-base leading-normal font-medium;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold leading-normal;
+  }
+
+  a {
+    @apply inline-block;
+  }
+
+  img,
+  svg {
+    @apply w-full h-full object-cover;
+  }
+
+  label {
+    @apply block;
+  }
+}
+
+@layer components {
+  .heading--1 {
+    @apply text-[39px];
+  }
+
+  .heading--2 {
+    @apply text-[31px];
+  }
+
+  .heading--3 {
+    @apply text-[25px] leading-[32px];
+  }
+
+  .heading--4 {
+    @apply text-[20px];
+  }
+
+  .heading--5 {
+    @apply text-[16px];
+  }
+
+  .desc--1 {
+    @apply text-xl; /* 20px */
+  }
+
+  .desc--2 {
+    @apply text-lg; /* 18px */
+  }
+
+  .desc--3 {
+    @apply text-base; /* 16px */
+  }
+
+  .desc--4 {
+    @apply text-sm; /* 14px */
+  }
+
+  .desc--5 {
+    @apply text-xs; /* 12px */
+  }
+
+  .label__style {
+    @apply text-lg md:text-xl font-normal;
+  }
+
+  .label__style--lg {
+    @apply text-base font-medium;
+  }
+
+  .input__style {
+    @apply text-base leading-normal font-medium text-custom-black w-full h-[58px] px-[23px] py-3 border border-custom-blue-grey-300 rounded-[10px] placeholder:text-custom-blue-grey-400 focus:outline-none;
+  }
+}
+
+/* Custom Code */
+
+.custom__box-shadow {
+  -webkit-box-shadow: 0px 47px 47px 0px rgba(0, 20, 122, 0.07);
+  -moz-box-shadow: 0px 47px 47px 0px rgba(0, 20, 122, 0.07);
+  box-shadow: 0px 47px 47px 0px rgba(0, 20, 122, 0.07);
+}
+
+.form-checkbox {
+  border: 1px solid #675c70;
+  background: transparent;
+  outline: none;
+  width: 19px;
+  height: 19px;
+}
+
+.form-checkbox:focus {
+  border-color: #675c70;
+}
+
+/* Custom Code */

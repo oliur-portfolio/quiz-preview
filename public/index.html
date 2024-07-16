@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Quiz | Login page</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Login Area -->
+      <section
+        class="bg-custom-white xl:min-h-screen flex flex-col xl:flex-row"
+      >
+        <div
+          class="flex-1 xl:flex-[0.46] flex items-center justify-center px-5 py-14 md:p-20 xl:p-0"
+        >
+          <div class="w-full max-w-[448px]">
+            <a href="#" class="w-[192px] h-[35px]">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+
+            <form action="" class="mt-10">
+              <div class="space-y-5">
+                <!-- Single Input -->
+                <label class="space-y-3">
+                  <p class="label__style">Email</p>
+
+                  <input
+                    type="text"
+                    placeholder="dasnilakash@gmail.com"
+                    class="input__style"
+                  />
+                </label>
+                <!-- Single Input -->
+
+                <!-- Single Input -->
+                <label class="space-y-3">
+                  <p class="label__style">Password</p>
+
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="input__style"
+                  />
+                </label>
+                <!-- Single Input -->
+              </div>
+
+              <div class="flex items-center justify-between mt-8">
+                <!-- Single Input -->
+                <label class="flex items-center gap-2 w-fit cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-custom-blue rounded-[4px] focus:outline-none focus:shadow-none focus:ring-offset-1 focus:border-custom-blue-grey-500 focus:ring-transparent focus:ring-1"
+                    checked
+                  />
+                  <span class="label__style--lg text-custom-blue-grey-500"
+                    >Remember me</span
+                  >
+                </label>
+                <!-- Single Input -->
+
+                <a
+                  href="#"
+                  class="desc--3 text-custom-blue-500 font-normal hover:underline"
+                  >Forgot Password?</a
+                >
+              </div>
+
+              <div class="mt-12 space-y-4">
+                <button
+                  class="desc--1 w-full h-[51px] border-2 border-transparent bg-custom-blue-600 text-custom-blue-grey-50 rounded-lg transition-all duration-200 ease-in-out hover:bg-custom-blue-100 hover:border-custom-blue hover:text-custom-blue custom__box-shadow"
+                >
+                  Sign in
+                </button>
+
+                <button
+                  class="desc--1 w-full h-[51px] bg-custom-white text-custom-blue-grey-600 border-2 border-custom-blue-grey-400 rounded-lg flex items-center justify-center gap-2 transition-all duration-200 ease-in-out"
+                >
+                  <img
+                    class="w-8 h-8 object-contain"
+                    src="images/google.svg"
+                    alt=""
+                  />
+                  Sign in with Google
+                </button>
+              </div>
+            </form>
+
+            <p
+              class="desc--3 text-custom-blue-grey-500 font-medium text-center mt-6"
+            >
+              Don’t have an account?
+              <a href="#" class="text-custom-blue-500 hover:underline"
+                >Sign up now!</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-custom-blue-100 flex-1 xl:flex-[0.54] flex items-center justify-center px-5 py-14 md:p-20 xl:p-0"
+        >
+          <div class="w-full max-w-[448px] xl:max-w-[635px] h-auto">
+            <img src="./images/logo-hero.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Login Area -->
+    </main>
+    <!-- Main Content -->
+  </body>
+</html>
