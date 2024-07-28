@@ -32,7 +32,7 @@
   }
 
   body {
-    @apply font-switzer text-base leading-normal font-medium;
+    @apply font-switzer text-base leading-normal text-custom-blue-grey-500 font-medium;
   }
 
   h1,
@@ -41,7 +41,7 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold leading-normal;
+    @apply text-custom-blue-grey-700 font-semibold leading-normal;
   }
 
   a {
@@ -60,7 +60,7 @@
 
 @layer components {
   .heading--1 {
-    @apply text-[39px];
+    @apply md:text-[39px] text-2xl;
   }
 
   .heading--2 {
@@ -109,6 +109,18 @@
 
   .input__style {
     @apply text-base leading-normal font-medium text-custom-black w-full h-[58px] px-[23px] py-3 border border-custom-blue-grey-300 rounded-[10px] placeholder:text-custom-blue-grey-400 focus:outline-none;
+  }
+
+  .switch__green {
+    @apply bg-custom-white border-custom-green-600 after:bg-custom-green-500 peer-checked:bg-custom-green-100;
+  }
+
+  .switch__red {
+    @apply bg-custom-white border-custom-red/60 after:bg-custom-red peer-checked:bg-custom-red-100;
+  }
+
+  .switch__blue {
+    @apply bg-custom-white border-custom-blue-dark after:bg-custom-blue-dark peer-checked:bg-custom-blue-dark-150;
   }
 }
 
