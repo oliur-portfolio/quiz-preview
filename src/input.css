@@ -122,6 +122,10 @@
   .switch__blue {
     @apply bg-custom-white border-custom-blue-dark after:bg-custom-blue-dark peer-checked:bg-custom-blue-dark-150;
   }
+
+  .switch__orange {
+    @apply bg-custom-white border-custom-orange-400 after:bg-custom-orange peer-checked:bg-custom-orange-50;
+  }
 }
 
 /* Custom Code */
